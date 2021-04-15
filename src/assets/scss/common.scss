@@ -1,0 +1,17 @@
+$right: right;/* 这是会消失的注释 */
+$left: left;
+
+
+@mixin float-left {
+  float: left;
+  ::after{
+    clear: both;
+  }
+}
+
+
+@mixin font-set($color,$size,$weight:normal){
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+}
